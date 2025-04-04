@@ -10,7 +10,7 @@ const mongoConnectionString = process.env.MONGO_URI + "&tlsAllowInvalidCertifica
 const agenda = new Agenda({
     db: {
         address: mongoConnectionString,
-        options: { tls: true }  // Ensuring TLS is enabled
+        options: { tls: true }  
     }
 });
 
