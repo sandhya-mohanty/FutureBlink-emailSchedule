@@ -1,5 +1,5 @@
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://future-blink-email-schedule-api.vercel.app';
 
 export const authService = {
   async register(email, password) {
