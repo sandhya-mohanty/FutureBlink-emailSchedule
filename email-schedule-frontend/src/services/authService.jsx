@@ -3,12 +3,12 @@ const API_URL = 'https://future-blink-email-schedule-api.vercel.app';
 
 export const authService = {
   async register(email, password) {
-    const response = await fetch(`${API_URL}/user/register`, {  // Ensure API_URL is used
+    const response = await fetch(`${API_URL}/user/register`, {  
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      credentials: 'include', // Allow cookies
+      credentials: 'include', 
       body: JSON.stringify({ email, password }),
     });
 
