@@ -1,5 +1,5 @@
 import { authService } from './authService';
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://future-blink-email-schedule-api.vercel.app';
 
 export const emailService = {
   async scheduleEmail(email, subject, body, leadSource = null, waitDelay = null) {
