@@ -35,15 +35,10 @@ const Sidebar = ({
           onDragStart={(e) => onDragStart(e, 'leadSource')}
           draggable
         >
-          Lead Source (Optional)
+          Lead Source
         </div>
       </div>
-      
-      <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded text-xs">
-        <p className="font-medium text-yellow-800">Note:</p>
-        <p className="text-yellow-700 mt-1">Lead Source and Wait/Delay nodes are now optional. Emails can be scheduled without them.</p>
-      </div>
-      
+     
       {savedTime && (
         <div className="mt-6 border-t pt-4">
           <h2 className="font-bold mb-2">Flow Information</h2>
