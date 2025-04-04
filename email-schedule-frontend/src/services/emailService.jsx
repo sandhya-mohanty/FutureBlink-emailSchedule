@@ -13,19 +13,19 @@ export const emailService = {
       email: String(email), 
       subject: String(subject), 
       body: String(body),
-      leadSource: leadSource || null,  // Ensure it's always set
+      leadSource: leadSource || null,  
       waitDelay: waitDelay ? { 
         value: waitDelay.value ? Number(waitDelay.value) : 1,
         unit: waitDelay.unit ? String(waitDelay.unit) : 'Days'
-      } : null  // Explicitly set to null if not provided
+      } : null  
     };
     
     // Convert to JSON manually with replacer function
     const jsonBody = JSON.stringify(requestBody, (key, value) => {
-      // Prevent undefined values from being dropped
+      
       return value === undefined ? null : value;
     });
-    console.log("Final API request body:", jsonBody);
+    
 
     
     const response = await fetch(`${API_URL}/email/schedule-email`, {
