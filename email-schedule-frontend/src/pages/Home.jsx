@@ -67,37 +67,6 @@ const Home = () => {
         </div>
       </div>
       
-      <div className="grid md:grid-cols-3 gap-6 mb-12">
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <div className="text-blue-500 mb-3">
-            <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-            </svg>
-          </div>
-          <h3 className="text-xl font-semibold mb-2">Save Time</h3>
-          <p className="text-gray-600">Automate your follow-ups and never forget to send an important email again.</p>
-        </div>
-        
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <div className="text-blue-500 mb-3">
-            <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
-            </svg>
-          </div>
-          <h3 className="text-xl font-semibold mb-2">Personalize at Scale</h3>
-          <p className="text-gray-600">Create personalized sequences that feel like one-to-one communication.</p>
-        </div>
-        
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <div className="text-blue-500 mb-3">
-            <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zm7-10a1 1 0 01.707.293l.707.707a1 1 0 011.414 0L15 4a1 1 0 010 1.414l-.707.707a1 1 0 01-1.414 0L12 5.414l-.707.707a1 1 0 01-1.414 0L9 5.414a1 1 0 010-1.414l.707-.707A1 1 0 0112 3z" clipRule="evenodd" />
-            </svg>
-          </div>
-          <h3 className="text-xl font-semibold mb-2">Visual Builder</h3>
-          <p className="text-gray-600">Design complex email sequences with our intuitive visual builder.</p>
-        </div>
-      </div>
     </div>
   );
 };
