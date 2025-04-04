@@ -171,7 +171,7 @@ const EmailAutomationFlow = () => {
         newNode.data = {
           ...newNode.data,
           value: 1,
-          unit: 'Days', // Updated to match backend enum
+          unit: 'Days', 
         };
       } else if (type === 'leadSource') {
         newNode.data = {
@@ -338,17 +338,6 @@ const EmailAutomationFlow = () => {
             }
           });
             
-          // // Extract leadSource if it exists
-          // const leadSource = leadSourceNode?.data?.source || null;
-            
-          // // Extract waitDelay if it exists with both value and unit
-          // const waitDelay = waitDelayNode?.data?.value && waitDelayNode?.data?.unit
-          //   ? {
-          //       value: Number(waitDelayNode.data.value),
-          //       unit: String(waitDelayNode.data.unit)
-          //     }
-          //   : null;
-
           const leadSource = (leadSourceNode?.data?.source && leadSourceNode.data.source !== "") 
   ? leadSourceNode.data.source 
   : null;
@@ -360,15 +349,7 @@ const waitDelay = (waitDelayNode?.data?.value && waitDelayNode?.data?.unit && wa
       unit: String(waitDelayNode.data.unit)
     }
   : null;
-            
-          console.log("Scheduling email with:", {
-            email: item.to,
-            subject: item.subject,
-            content: item.content,
-            leadSource,
-            waitDelay
-          });
-            
+             
           // Schedule email with optional parameters
           await emailService.scheduleEmail(
             item.to,
