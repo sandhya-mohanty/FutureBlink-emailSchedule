@@ -11,7 +11,7 @@ const emailRoutes = require("./routes/emailRoutes");
 const authRoutes = require("./routes/authRoutes");
 
 app.use(cors({
-  origin: "http://localhost:5173", // Allow frontend URL
+  origin: "https://future-blink-email-schedule-client.vercel.app", // Allow frontend URL
   credentials: true  // Allow cookies & authentication headers
 }));
 
