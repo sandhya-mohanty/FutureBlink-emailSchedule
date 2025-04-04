@@ -219,8 +219,7 @@ const EmailAutomationFlow = () => {
           return `Invalid email address in Cold Email node.`;
         }
       }
-      // Wait/Delay nodes have default values so they're always valid
-      // Lead Source is now optional, no validation needed
+    
     }
     
     // Check if there are any connections
